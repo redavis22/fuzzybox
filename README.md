@@ -6,7 +6,10 @@ Customer Container Image for COMP 726
 docker build -t fuzzybox .
 
 ```
-
+## Disable ASLR
+```
+sudo docker run -it --rm --privileged --pid=host fuzzybox
+```
 ## Run
 
 ```

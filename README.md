@@ -1,3 +1,5 @@
+![fuzzybox cover art]("0 - fuzzy box.png")
+
 # fuzzybox
 Customer Container Image for COMP 726
 

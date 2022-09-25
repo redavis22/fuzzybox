@@ -1,6 +1,11 @@
 # fuzzybox
 Customer Container Image for COMP 726
 
+## Download and Install Docker Desktop
+```
+https://www.docker.com/products/docker-desktop/
+```
+
 ## Build
 ```
 docker build -t fuzzybox .

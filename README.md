@@ -1,4 +1,4 @@
-![fuzzybox cover art]("0 - fuzzy box.png")
+![fuzzybox cover art](https://github.com/redavis22/fuzzybox/blob/c71e170d6add23a8f8445503757cf44227a523a4/0%20-%20fuzzy%20box.png)
 
 # fuzzybox
 Customer Container Image for COMP 726

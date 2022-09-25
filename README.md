@@ -16,16 +16,17 @@ docker build -t fuzzybox .
 sudo docker run -it --rm --privileged --pid=host fuzzybox
 ```
 
-## Disable ASLR within Docker container
-```
-echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
-```
+
 
 ## Run
 
 ```
 docker run -i -t fuzzybox /bin/bash
 
+```
+## Disable ASLR within Docker container
+```
+echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 ```
 
 ## Find Image

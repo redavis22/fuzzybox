@@ -12,12 +12,12 @@ WORKDIR /home
 
 # Install common and useful tools
 RUN apt -y install curl wget vim git 
-RUN apt-get install libncurses5-dev libncursesw5-dev
-RUN git clone https://github.com/nTerior/fox
-CMD cd fox
-CMD make
-CMD make install
-CMD cd /home
+# RUN apt-get install libncurses5-dev libncursesw5-dev
+#RUN git clone https://github.com/nTerior/fox
+#CMD cd fox
+#CMD make
+#CMD make install
+#CMD cd /home
 
 # Install comman languages
 RUN apt -y install python3-pip  g++
@@ -37,4 +37,5 @@ CMD zsh
 # Powerline10k
 RUN git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 RUN echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-
+RUN q
+CMD echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >>! ~/.zshrc

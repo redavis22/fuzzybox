@@ -16,3 +16,6 @@ RUN apt -y install curl wget vim git
 
 # Install comman languages
 RUN apt -y install python3-pip  g++
+
+# Install Class Cipher Busters
+RUN pip3 install secretpy

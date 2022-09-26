@@ -9,11 +9,15 @@ RUN apt -y update
 # Working Directory
 WORKDIR /home
 
-# Set Hostname
-ENV DOCKER_HOSTNAME=${DOCKER_HOSTNAME:fuzzybox}
 
 # Install common and useful tools
 RUN apt -y install curl wget vim git 
+RUN apt-get install libncurses5-dev libncursesw5-dev
+RUN git clone https://github.com/nTerior/fox
+CMD cd fox
+CMD make
+CMD make install
+CMD cd /home
 
 # Install comman languages
 RUN apt -y install python3-pip  g++

@@ -8,7 +8,7 @@ Original file is located at
 """
 
 ciphertext = []
-print("Hello, Tolu. Please enter row transposition ciphertext \n")
+print("Please enter row transposition ciphertext \n")
 
 ciphertext = str(input(''))
 

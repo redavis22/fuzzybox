@@ -34,10 +34,14 @@ RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -
 CMD zsh
 
 # Get Repo
-CMD git clone https://github.com/redavis22/fuzzybox
+CMD cd /home
+RUN git clone https://github.com/redavis22/fuzzybox
 
 # Powerline10k
 RUN git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 RUN echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 CMD q
 CMD echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >>! ~/.zshrc
+
+# RUN Row Transpostition Cipher
+CMD echo "python3 fuzzybox/row-house.py"

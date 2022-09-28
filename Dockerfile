@@ -33,6 +33,8 @@ RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -
 # Use ZSH
 CMD zsh
 
+# Get Repo
+CMD git clone https://github.com/redavis22/fuzzybox
 
 # Powerline10k
 RUN git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k

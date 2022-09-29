@@ -36,7 +36,7 @@ def function(str, k):
 				lst.append(j)
 			print(' '.join(lst))
    
-print(str(key) + " columns\n" + str(rows) + ' rows\n' + str(len(ciphertext)) + ' characters\n')
+#print(str(key) + " columns\n" + str(rows) + ' rows\n' + str(len(ciphertext)) + ' characters\n')
 function(ciphertext, 15)
 print("\n" + str(key) + " columns\n" + str(rows) + ' rows\n' + str(len(ciphertext)) + ' characters\n')
 

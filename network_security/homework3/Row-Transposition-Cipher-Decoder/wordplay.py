@@ -3,10 +3,9 @@ import enchant
 d = enchant.Dict("en_US")
 
 
-#input1 = "Pndwietxt"
 input1 = []
-input1 = str("Please enter row characters " + input(''))
-
+print("Please enter row characters for wordplay: \n")
+input1 = str( input(''))
 letter1 = [x.lower() for x in input1]
 print(letter1)
 

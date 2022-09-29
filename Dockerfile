@@ -3,6 +3,9 @@
 # Ubuntu for now
 FROM ubuntu:20.04
 
+# Set ENVs
+ENV DEBIAN_FRONTEND noninteractive
+
 # Update 
 RUN apt -y update
 
@@ -27,7 +30,7 @@ RUN pip3 install secretpy
 
 # Install enchant
 RUN apt-get install libenchant1c2a -y
-CMD pip instally pyenchant
+CMD pip install -y pyenchant
 
 # Install Oh-my-zsh
 RUN apt-get install -y zsh

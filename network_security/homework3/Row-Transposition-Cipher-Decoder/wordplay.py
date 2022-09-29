@@ -15,7 +15,7 @@ def spell_check():
             if d.check(z):
                 print(z)
                 
-     print("\n\n\n" + str(type(z)))
+     print(type(z))
                
 while(True):
     spell_check()

@@ -25,6 +25,10 @@ RUN apt -y install python3-pip  g++
 # Install Class Cipher Busters
 RUN pip3 install secretpy
 
+# Install enchant
+RUN apt-get install libenchant1c2a -y
+CMD pip instally pyenchant
+
 # Install Oh-my-zsh
 RUN apt-get install -y zsh
 

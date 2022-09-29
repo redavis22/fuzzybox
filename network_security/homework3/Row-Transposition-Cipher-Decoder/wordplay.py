@@ -9,7 +9,7 @@ input1 = str( input(''))
 letter1 = [x.lower() for x in input1]
 print(letter1)
 
-for y in list(permutations(letter1, 7)):
+for y in list(permutations(letter1)):
     z = "".join(y)
     if len(z) > 2:
         if d.check(z):

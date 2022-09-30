@@ -31,6 +31,7 @@ RUN pip3 install secretpy
 # Install enchant
 RUN apt-get install libenchant1c2a -y
 CMD pip install -y pyenchant
+CMD pip3 install pyenchant==2.0.0 
 
 # Install Oh-my-zsh
 RUN apt-get install -y zsh

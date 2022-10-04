@@ -5,9 +5,11 @@ Requires input file "input.txt" to be in the same directory (and readable)
 import ratings
 import random
 
-HILLS = 50
-STAIRS_PER_HILL = 5000
+HILLS = 1000
+STAIRS_PER_HILL = 500
 rating_dictionary = ratings.trigrams
+
+
 
 def convert(ciphertext, testkey):
     for i in range(len(testkey)):

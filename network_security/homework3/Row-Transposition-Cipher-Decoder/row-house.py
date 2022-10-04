@@ -14,7 +14,7 @@ ciphertext = str(input(''))
 
 print(len(ciphertext))
 
-key = 15
+key = 15 
 rows = len(ciphertext)/key
 print(rows)
 

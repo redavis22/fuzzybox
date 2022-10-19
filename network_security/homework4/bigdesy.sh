@@ -10,12 +10,6 @@ echo "make 1MB file of zeroes"
 
 #dd if=/dev/zero of=output.file bs=1024 count=1024
 
-# cat /dev/urandom | head -1
-
-#cat /dev/urandom | head -1 > randombytes.bin
-
-#xxd randombytes.bin | head -1
-
 dd if=/dev/zero of=network.txt bs=1024 count=1024
 echo "DES"
 time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999 && time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999 && time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999

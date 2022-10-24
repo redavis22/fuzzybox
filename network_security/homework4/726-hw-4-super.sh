@@ -31,22 +31,6 @@ time openssl dgst -sha256 network.txt
 time openssl dgst -sha256 network.txt 
 time openssl dgst -sha256 network.txt
 
-# Commented out IPython magic to ensure Python compatibility.
-## Import data visualization packages
-#import matplotlib.pyplot as plt
-# %matplotlib inline
-
-#import pandas as pd
-
-#df = pd.read_csv("/content/Template - COMP 726 - Homework 4 - Avg Speed - Sheet2.csv")
-
-#df
-
-#bar = df.plot(kind ='bar')
-#plt.xlabel("Encryption Scheme", fontsize = 20)
-
-#Need to implement RSA still
-#https://opensource.com/article/21/4/encryption-decryption-openssl
 
 openssl genrsa -aes128 -out alice_private.pem 1024
 

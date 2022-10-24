@@ -12,7 +12,7 @@ dd if=/dev/zero of=network.txt bs=1024 count=1024 && ls
 time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999 && time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999 && time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999
 echo "*******DES ABOVE********"
 time openssl enc -des3 -a -in network.txt -out network_DES3.txt -k 123des321 && time openssl enc -des3 -a -in network.txt -out network_DES3.txt -k 123des321 && time openssl enc -des3 -a -in network.txt -out network_DES3.txt -k 123des321
-echo "**********3DES ABOVE**********'
+echo "**********3DES ABOVE**********"
 
 
 time openssl enc -aes-128-cbc -a -in network.txt -out networkaes.enc.txt -k 123456 && time openssl enc -aes-128-cbc -a -in network.txt -out networkaes.enc.txt -k 123456 && time openssl enc -aes-128-cbc -a -in network.txt -out networkaes.enc.txt -k 123456

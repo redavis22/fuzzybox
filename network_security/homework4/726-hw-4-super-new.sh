@@ -58,4 +58,3 @@ time for i in segment*; do   openssl rsautl -encrypt -inkey bob_public.pem -pubi
 
 time for i in segment*; do   openssl rsautl -encrypt -inkey bob_public.pem -pubin -in $i -out test.enc -oaep; done
 
-echo "**********RSA ABOVE************"

@@ -10,27 +10,27 @@ dd if=/dev/zero of=network.txt bs=1024 count=1024 && ls
 
 
 time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999 && time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999 && time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999
-
+echo "*******DES ABOVE********"
 time openssl enc -des3 -a -in network.txt -out network_DES3.txt -k 123des321 && time openssl enc -des3 -a -in network.txt -out network_DES3.txt -k 123des321 && time openssl enc -des3 -a -in network.txt -out network_DES3.txt -k 123des321
-
+echo "**********3DES ABOVE**********'
 
 
 time openssl enc -aes-128-cbc -a -in network.txt -out networkaes.enc.txt -k 123456 && time openssl enc -aes-128-cbc -a -in network.txt -out networkaes.enc.txt -k 123456 && time openssl enc -aes-128-cbc -a -in network.txt -out networkaes.enc.txt -k 123456
-
+echo "**********AES ABOVE***********"
 time openssl enc -rc4 -a -in network.txt -out network_rc4.txt.enc -k 123456 && time openssl enc -rc4 -a -in network.txt -out network_rc4.txt.enc -k 123456 && time openssl enc -rc4 -a -in network.txt -out network_rc4.txt.enc -k 123456
-
+echo "***********RC4 ABOVE**********"
 time openssl dgst -md5 network.txt 
 time openssl dgst -md5 network.txt 
 time openssl dgst -md5 network.txt
-
+echo "*********MD5 ABOVE*********"
 time openssl dgst -sha1 network.txt 
 time openssl dgst -sha1 network.txt 
 time openssl dgst -sha1 network.txt
-
+echo "*********SHA1 ABOVE*********"
 time openssl dgst -sha256 network.txt 
 time openssl dgst -sha256 network.txt 
 time openssl dgst -sha256 network.txt
-
+echo "***********SHA256**************"
 
 openssl genrsa -aes128 -out alice_private.pem 1024
 
@@ -58,3 +58,4 @@ time for i in segment*; do   openssl rsautl -encrypt -inkey bob_public.pem -pubi
 
 time for i in segment*; do   openssl rsautl -encrypt -inkey bob_public.pem -pubin -in $i -out test.enc -oaep; done
 
+echo "**********RSA ABOVE************"

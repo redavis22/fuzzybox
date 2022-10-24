@@ -2,24 +2,18 @@
 
 
 
-### Make Large file
-"""
 
 #!/bin/bash
 
 
 dd if=/dev/zero of=network.txt bs=1024 count=1024 && ls
 
-"""### Run DES"""
 
 time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999 && time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999 && time openssl enc -des -a  -in network.txt -out network_DES-out.enc  -k 999999
 
 time openssl enc -des3 -a -in network.txt -out network_DES3.txt -k 123des321 && time openssl enc -des3 -a -in network.txt -out network_DES3.txt -k 123des321 && time openssl enc -des3 -a -in network.txt -out network_DES3.txt -k 123des321
 
-"""### Record execution times above into spreadsheet
 
-### Run AES-128
-"""
 
 time openssl enc -aes-128-cbc -a -in network.txt -out networkaes.enc.txt -k 123456 && time openssl enc -aes-128-cbc -a -in network.txt -out networkaes.enc.txt -k 123456 && time openssl enc -aes-128-cbc -a -in network.txt -out networkaes.enc.txt -k 123456
 
